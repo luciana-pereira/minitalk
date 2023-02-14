@@ -16,6 +16,11 @@ Portanto, podemos usar o Signal para enviar e receber sinais.
 **SIGUSR1:** De numero 10 e o Sinal 1 definido pelo usuário (POSIX)</br>
 **SIGUSR2:** De numero 12 e o Sinal 2 definido pelo usuário (POSIX) 
 
+## Projeto 
+**Servidor:** Usando **signal** e **sigaction**, poderemos decidir qual ação tomar quando receber um sinal.</br>
+**Cliente:** Podemos enviar um sinal do cliente para o servidor usando a função kill.
+Executa uma ação predeterminada ➡️ gera um sinal (função kill, programa cliente) ➡️ o processo. (sinal/sigaction, programa de servidor, funciona de forma assíncrona)
+
 ## Referências de estudo
 Primeiros passos antes de começar a codar, entenda o projeto e o que e solicitado.
 - [Entenda como os sinais de interrupção de software](https://blog.pantuza.com/artigos/linux-signals-as-interrupcoes-de-software-na-gestao-de-processos-em-sistemas-operacionais)
