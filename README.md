@@ -18,7 +18,8 @@ Portanto, podemos usar o Signal para enviar e receber sinais.
 
 ## Projeto 
 **Servidor:** Usando **signal** e **sigaction**, poderemos decidir qual ação tomar quando receber um sinal.</br>
-**Cliente:** Podemos enviar um sinal do cliente para o servidor usando a função kill.
+**Cliente:** Podemos enviar um sinal do cliente para o servidor usando a função kill.</br>
+
 Executa uma ação predeterminada ➡️ gera um sinal (função kill, programa cliente) ➡️ o processo. (sinal/sigaction, programa de servidor, funciona de forma assíncrona)
 
 ## Referências de estudo
