@@ -28,3 +28,4 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [3.3 Signals por Benjamin Brewster](https://www.youtube.com/watch?v=VwS3dx3uyiQ)
 - [Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
 - [Short introduction to signals in C](https://www.youtube.com/watch?v=5We_HtLlAbs)
+- [Signal Sets](https://www.gnu.org/software/libc/manual/html_node/Signal-Sets.html)
