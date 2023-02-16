@@ -22,6 +22,15 @@ Portanto, podemos usar o Signal para enviar e receber sinais.
 
 Executa uma ação predeterminada ➡️ gera um sinal (função kill, programa cliente) ➡️ o processo. (sinal/sigaction, programa de servidor, funciona de forma assíncrona)
 
+## Funções
+
+- <b>.signal: </b>
+Executa a função do handler se bem-sucedida e retorna -1 se falhar.
+
+```
+void (*signal(int signum, void (*handler)(int)))(int);
+```
+
 ## Referências de estudo
 Primeiros passos antes de começar a codar, entenda o projeto e o que e solicitado.
 - [Entenda como os sinais de interrupção de software](https://blog.pantuza.com/artigos/linux-signals-as-interrupcoes-de-software-na-gestao-de-processos-em-sistemas-operacionais)
