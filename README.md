@@ -22,13 +22,20 @@ Portanto, podemos usar o Signal para enviar e receber sinais.
 
 Executa uma ação predeterminada ➡️ gera um sinal (função kill, programa cliente) ➡️ o processo. (sinal/sigaction, programa de servidor, funciona de forma assíncrona)
 
-## Funções
+## Funções utilizadas
 
-- <b>.signal: </b>
+- <b>signal(): </b>
 Executa a função do handler se bem-sucedida e retorna -1 se falhar.
 
 ```
 void (*signal(int signum, void (*handler)(int)))(int);
+```
+
+- <b>sigemptyset(): </b>
+A função sigemptyset é utilizada para inicializar um sinal definido para o conjunto vazio, o que significa que não contém quaisquer sinais. 
+
+```
+int sigemptyset(sigset_t *set);
 ```
 
 ## Referências de estudo
