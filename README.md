@@ -45,3 +45,5 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
 - [Short introduction to signals in C](https://www.youtube.com/watch?v=5We_HtLlAbs)
 - [Signal Sets](https://www.gnu.org/software/libc/manual/html_node/Signal-Sets.html)
+- [Minitalk-Main](https://velog.io/@sweetykr/Minitalk-Main)
+- [Sigint and other termination signals](https://www.baeldung.com/linux/sigint-and-other-termination-signals)
