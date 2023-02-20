@@ -1,5 +1,5 @@
 # Minitalk
-Este projeto consiste na construção de um programa na forma de um servidor e um client em C, que se comuniquem através de dois sinais unix enviados com o kill, ou seja, envie os dados em binário via sinais unix. Recebendo bits na ordem em que são enviados.
+Este projeto consiste na construção de um programa na forma de um servidor e um client em C, que se comuniquem através de dois sinais unix SIGUSR1 e SIGUSR2 (passando assim os dados em forma binária) enviados com o kill, ou seja, envie os dados em binário via sinais unix. Recebendo bits na ordem em que são enviados.
 
 ## O que é Unix Signal?
 Sinais (signals) é uma interrupção de software** implementadas pelos sistema operaciona que envia uma mensagem simples para um processo "de forma assíncrona" notificando-o de que algo aconteceu (evento).
