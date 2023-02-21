@@ -25,7 +25,7 @@ Executa uma ação predeterminada ➡️ gera um sinal (função kill, programa 
 ## Funções utilizadas
 
 - <b>signal(): </b>
-Executa a função do handler se bem-sucedida e retorna -1 se falhar.
+A função de **_signal_** permite especificar uma função a ser chamada quando um determinado sinal é recebido, para que possa tomar algumas medidas em resposta ao sinal. Se bem-sucedida, executa a função e retorna -1 se falhar.
 
 ```
 void (*signal(int signum, void (*handler)(int)))(int);
