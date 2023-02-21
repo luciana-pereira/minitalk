@@ -43,6 +43,7 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Entenda como os sinais de interrupção de software](https://blog.pantuza.com/artigos/linux-signals-as-interrupcoes-de-software-na-gestao-de-processos-em-sistemas-operacionais)
 - [3.3 Signals por Benjamin Brewster](https://www.youtube.com/watch?v=VwS3dx3uyiQ)
 - [Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
+- [Codificação de caracteres](https://wiki.inf.ufpr.br/maziero/doku.php?id=prog2:codificacao_de_caracteres#:~:text=Cada%20caractere%20%C3%A9%20codificado%20em%20um%20byte%2C%20mas,feed%2C%20tab%2C%20etc%29%2C%20que%20dependem%20do%20terminal%20utilizado.)
 - [Short introduction to signals in C](https://www.youtube.com/watch?v=5We_HtLlAbs)
 - [Signal Sets](https://www.gnu.org/software/libc/manual/html_node/Signal-Sets.html)
 - [Minitalk-Main](https://velog.io/@sweetykr/Minitalk-Main)
