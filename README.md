@@ -50,3 +50,5 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Minitalk-Main](https://velog.io/@sweetykr/Minitalk-Main)
 - [Sigint and other termination signals](https://www.baeldung.com/linux/sigint-and-other-termination-signals)
 - [O bit, o byte, o caractere e a palavra - 32 e 64 bits | O Informata #01](https://www.youtube.com/watch?v=NYuZXg2GA9g)
+- [Bitwise right shift operator in C](https://www.log2base2.com/C/bitwise/bitwise-right-shift-operator-in-c.html)
+- [Conversor | Bitwise Operators](http://www.convertalot.com/bitwise_operators.html)
