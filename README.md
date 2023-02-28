@@ -38,6 +38,13 @@ A função sigemptyset é utilizada para inicializar um sinal definido para o co
 int sigemptyset(sigset_t *set);
 ```
 
+- <b>sigaddset(): </b>
+A função sigaddset permite adicionar um sinal a um conjunto de sinais. A função requer dois argumentos: um ponteiro para um conjunto de sinais e o numero do sinal a adicionar ao conjunto.
+
+```
+int sigaddset(sigset_t *set, int signum);
+```
+
 ## Referências de estudo
 Primeiros passos antes de começar a codar, entenda o projeto e o que e solicitado.
 - [Entenda como os sinais de interrupção de software](https://blog.pantuza.com/artigos/linux-signals-as-interrupcoes-de-software-na-gestao-de-processos-em-sistemas-operacionais)
