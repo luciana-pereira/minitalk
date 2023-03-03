@@ -60,3 +60,4 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Bitwise right shift operator in C](https://www.log2base2.com/C/bitwise/bitwise-right-shift-operator-in-c.html)
 - [Conversor | Bitwise Operators](http://www.convertalot.com/bitwise_operators.html)
 - [Sending and Handling Signals in C](https://www.youtube.com/watch?v=83M5-NPDeWs)
+- [Communicating between processes using signals](https://www.youtube.com/watch?v=PErrlOx3LYE)
