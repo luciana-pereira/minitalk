@@ -61,3 +61,6 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Conversor | Bitwise Operators](http://www.convertalot.com/bitwise_operators.html)
 - [Sending and Handling Signals in C](https://www.youtube.com/watch?v=83M5-NPDeWs)
 - [Communicating between processes using signals](https://www.youtube.com/watch?v=PErrlOx3LYE)
+- [Enviar sinal para um processo em C](https://www.delftstack.com/pt/howto/c/send-signal-to-process-in-c/)
+- []()
+- []()
