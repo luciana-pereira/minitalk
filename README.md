@@ -62,5 +62,6 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Sending and Handling Signals in C](https://www.youtube.com/watch?v=83M5-NPDeWs)
 - [Communicating between processes using signals](https://www.youtube.com/watch?v=PErrlOx3LYE)
 - [Enviar sinal para um processo em C](https://www.delftstack.com/pt/howto/c/send-signal-to-process-in-c/)
-- []()
-- []()
+- [Como enviar e tratar sinais e processos no Linux com C (Parte 1)](https://www.youtube.com/watch?v=CvJYxHrSU88)
+- [Como enviar e tratar sinais e processos no Linux com C (Parte 2)](https://www.youtube.com/watch?v=dHXODZrBalY)
+- [Automatizar envio de sinais ao processo com um programa de monitoramento](https://www.youtube.com/watch?v=QHLktHXf-Og)
