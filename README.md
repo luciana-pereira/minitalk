@@ -7,6 +7,9 @@ Com a função _**getpid**_, conseguimos pegar o ID do processo do programa do s
 ```
 kill(pid, SIGUSR1);
 ```
+A segunda etapa e realizar a conversão de caracters ASCII em binário. A tabela ASCII representa todo os 127 caracters e seus valores, ou seja cada caracter possui um número.
+
+A forma como os programas podem se comunicar atraves dos sinais **SIGUSR1** e **SIGUSR2**, e faze-los representar um valor binario cada, considerando que SIGUSR1 representa 0 e SIGUSR2 representa 1, desta forma quando enviamos o sinal SIGUSR1, estamos enviando o 0 para o servidor, e quando fazemos o mesmo com o SIGUSR2, estamos enviando 1. Nesta etapa obteremos todos os bits de um caracter (8 bits em ASCII), o que significa que o servidor precisara receber os 8 sinais do client para cada caracter ASCII. 
 
 ## O que é Unix Signal?
 Sinais (signals) é uma interrupção de software** implementadas pelos sistema operaciona que envia uma mensagem simples para um processo "de forma assíncrona" notificando-o de que algo aconteceu (evento).
