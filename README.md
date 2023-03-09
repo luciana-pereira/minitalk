@@ -82,3 +82,4 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Como enviar e tratar sinais e processos no Linux com C (Parte 1)](https://www.youtube.com/watch?v=CvJYxHrSU88)
 - [Como enviar e tratar sinais e processos no Linux com C (Parte 2)](https://www.youtube.com/watch?v=dHXODZrBalY)
 - [Automatizar envio de sinais ao processo com um programa de monitoramento](https://www.youtube.com/watch?v=QHLktHXf-Og)
+- [Tabela ASCII e código binario](https://marquesfernandes.com/desenvolvimento/codigo-ascii-tabela-ascii-completa/)
