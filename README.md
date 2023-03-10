@@ -47,6 +47,30 @@ A função sigemptyset é utilizada para inicializar um sinal definido para o co
 ```
 int sigemptyset(sigset_t *set);
 ```
+<b>Exemplo:</b><br>
+Neste exemplo abaixo a <b>sigemptyset</b> é utilizada para inicializar a mascara de sinal, que especifica os sinais que devem ser bloqueados enquanto um manipulador de sinal esta sendo executado.
+
+```
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void sig_handler(int signum) {
+  printf("Signal recebido %d\n", signum);
+ }
+
+int main(void) {
+  struct sigaction act;
+  act.sa_handler = sig_handler;
+  sigemptyset(&act.sa_mask);
+  act.sa_flags = 0;
+  sigaction(SIGINT, &act, NULL);
+  while (1) {
+    //código
+  }
+  return (0);
+ }
+```
 
 - <b>sigaddset(): </b>
 A função sigaddset permite adicionar um sinal a um conjunto de sinais. A função requer dois argumentos: um ponteiro para um conjunto de sinais e o numero do sinal a adicionar ao conjunto.
@@ -61,6 +85,11 @@ A função sigaction  é utilizado para especificar as medidas a tomar quando um
 ```
 int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
 ```
+Argumentos:
+- <b>signum:</b> Especifica o sinal para o qual a ação está a ser especificada.
+- <b>act:</b> É um indicador de struct sigaction que especifica a ação a tomar.
+- <b>oldact:</b> É um ponteiro para uma struct sigaction que e usada para recuperar a ação anterior para o sinal especifico
+
 
 ## Referências de estudo
 Primeiros passos antes de começar a codar, entenda o projeto e o que e solicitado.
@@ -68,7 +97,7 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [3.3 Signals por Benjamin Brewster](https://www.youtube.com/watch?v=VwS3dx3uyiQ)
 - [Bit Manipulation](https://www.youtube.com/watch?v=7jkIUgLC29I)
 - [Manipulação ao nível do bit na linguagem C](https://www.revista-programar.info/artigos/manipulacao-ao-nivel-do-bit-na-linguagem-c/)
-- [Codificação de caracteres](https://wiki.inf.ufpr.br/maziero/doku.php?id=prog2:codificacao_de_caracteres#:~:text=Cada%20caractere%20%C3%A9%20codificado%20em%20um%20byte%2C%20mas,feed%2C%20tab%2C%20etc%29%2C%20que%20dependem%20do%20terminal%20utilizado.)
+- [Codificação de caracteres | Prof. Carlos Maziero](https://wiki.inf.ufpr.br/maziero/doku.php?id=prog2:codificacao_de_caracteres#:~:text=Cada%20caractere%20%C3%A9%20codificado%20em%20um%20byte%2C%20mas,feed%2C%20tab%2C%20etc%29%2C%20que%20dependem%20do%20terminal%20utilizado.)
 - [Short introduction to signals in C](https://www.youtube.com/watch?v=5We_HtLlAbs)
 - [Signal Sets](https://www.gnu.org/software/libc/manual/html_node/Signal-Sets.html)
 - [Minitalk-Main](https://velog.io/@sweetykr/Minitalk-Main)
@@ -83,3 +112,4 @@ Primeiros passos antes de começar a codar, entenda o projeto e o que e solicita
 - [Como enviar e tratar sinais e processos no Linux com C (Parte 2)](https://www.youtube.com/watch?v=dHXODZrBalY)
 - [Automatizar envio de sinais ao processo com um programa de monitoramento](https://www.youtube.com/watch?v=QHLktHXf-Og)
 - [Tabela ASCII e código binario](https://marquesfernandes.com/desenvolvimento/codigo-ascii-tabela-ascii-completa/)
+- [Sinais no UNIX](http://www.inf.ufes.br/~zegonc/material/Sistemas_Operacionais/Sinais%20no%20UNIX.pdf)
