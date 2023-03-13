@@ -6,7 +6,7 @@
 #    By: lucperei <lucperei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/11 06:07:54 by lucperei          #+#    #+#              #
-#    Updated: 2023/03/06 17:32:22 by lucperei         ###   ########.fr        #
+#    Updated: 2023/03/13 03:57:15 by lucperei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,10 +21,10 @@ LIBFT_DIR = ./libs/libft
 PRINTF_DIR = ./libs/printf
 LIBFT = $(LIBFT_DIR)/libft.a
 PRINTF = $(PRINTF_DIR)/libftprintf.a
-SRC_CLIENT = src/client.c src/error.c 
+SRC_CLIENT = src/client.c src/error.c src/utils.c
 SRC_SERVER = src/server.c 
-SRC_CLIENT_BONUS = src/bonus/client_bonus.c src/bonus/error_bonus.c
-SRC_SERVER_BONUS = src/bonus/server_bonus.c
+SRC_CLIENT_BONUS = src/bonus/client_bonus.c src/bonus/error_bonus.c rc/bonus/utils_bonus.c
+SRC_SERVER_BONUS = src/bonus/server_bonus.c 
 
 CC = cc
 RM = rm -rf
