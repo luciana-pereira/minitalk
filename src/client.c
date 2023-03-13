@@ -6,7 +6,7 @@
 /*   By: lucperei <lucperei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 01:10:43 by lucperei          #+#    #+#             */
-/*   Updated: 2023/03/08 03:35:19 by lucperei         ###   ########.fr       */
+/*   Updated: 2023/03/13 03:44:11 by lucperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ int	send_message(int pid, char *str)
 		send_error(NULL, 0, 0);
 	if (pid)
 		s_pid = pid;
-	if (message[bits / 8])
+	if (message[bits / BIT])
 	{
-		if (message[bits / 8] & (128 >> (bits % 8)))
+		if (message[bits / BIT] & (MAX_RANGE >> (bits % BIT)))
 		{
-			if (kill(s_pid, SIGUSR2) == -1)
-				send_error(message, pid, SIGUSR2);
+			if (kill(s_pid, SIGUSR2) == SIG_ERROR)
+				send_error(message, s_pid, SIGUSR2);
 		}
-		else if (kill(s_pid, SIGUSR1) == -1)
-			send_error(message, pid, SIGUSR1);
+		else if (kill(s_pid, SIGUSR1) == SIG_ERROR)
+			send_error(message, s_pid, SIGUSR1);
 		bits++;
 		return (0);
 	}
@@ -43,14 +43,14 @@ int	send_message(int pid, char *str)
 
 int	main(int argc, char **argv)
 {
-	if ((argc != 3))
+	if (argc != 3)
 	{
 		ft_printf("Error: Incorrect number of arguments!\n");
 		ft_printf("Try: %s <PID> \"<MESSAGE>\"\n", argv[0]);
 		exit(1);
 	}
-	signal(SIGUSR1, &sig_handler);
-	signal(SIGUSR2, &sig_handler);
+	signal(SIGUSR1, &handler_sig);
+	signal(SIGUSR2, &handler_sig);
 	if (!ft_atoi(argv[1]))
 	{
 		ft_printf("Error: %s is an invalid PID\n", argv[1]);
