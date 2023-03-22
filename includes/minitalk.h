@@ -18,7 +18,6 @@
 # include "../libs/libft/libft.h"
 
 # define BIT 8
-# define MAX_RANGE 128
 # define SIG_ERROR -1
 
 void	send_error(char *message, int pid, int sig);
