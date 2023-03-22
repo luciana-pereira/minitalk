@@ -6,7 +6,7 @@
 /*   By: lucperei <lucperei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 06:11:16 by lucperei          #+#    #+#             */
-/*   Updated: 2023/03/13 03:44:05 by lucperei         ###   ########.fr       */
+/*   Updated: 2023/03/19 12:02:55 by lucperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ void	signal_handler(int signum, siginfo_t *s_info, void *context)
 	(void)context;
 	pid = s_info->si_pid;
 	if (signum == SIGUSR1)
-		dec ^= (MAX_RANGE >> bits);
+		dec ^= (128 >> bits);
 	else if (signum == SIGUSR2)
-		dec |= (MAX_RANGE >> bits);
+		dec |= (128 >> bits);
 	if (++bits == BIT)
 	{
 		if (dec)
