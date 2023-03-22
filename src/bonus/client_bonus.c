@@ -6,7 +6,7 @@
 /*   By: lucperei <lucperei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 14:18:39 by lucperei          #+#    #+#             */
-/*   Updated: 2023/03/13 03:58:48 by lucperei         ###   ########.fr       */
+/*   Updated: 2023/03/19 12:01:07 by lucperei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	send_message(int pid, char *str)
 		s_pid = pid;
 	if (message[bits / BIT])
 	{
-		if (message[bits / BIT] & (MAX_RANGE >> (bits % BIT)))
+		if (message[bits / BIT] & (128 >> (bits % BIT)))
 		{
 			if (kill(s_pid, SIGUSR2) == SIG_ERROR)
 				send_error(message, s_pid, SIGUSR2);
